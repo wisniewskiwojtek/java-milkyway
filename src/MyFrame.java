@@ -13,6 +13,9 @@ public class MyFrame extends JFrame {
         this.setVisible(true);
         this.setLocationRelativeTo(null);
     }
+    public double map( double number,int a, int b, int c, int d){
+        return c + (double)(d-c)/(b-a)*(double)(number-a);
+    }
     public static void main(String [] args){
         MyFrame frame = new MyFrame();
     }
